@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stepper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCi-AP-T2k">
+                                <rect key="frame" x="40" y="74" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v8g-De-Ag2">
+                                <rect key="frame" x="40" y="168" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLt-9l-1Ti">
+                                <rect key="frame" x="90" y="294" width="235" height="71"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lr1-6q-Nzg">
+                                <rect key="frame" x="113" y="721" width="154" height="50"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addValues:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSu-Ec-Qqq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v8g-De-Ag2" firstAttribute="top" secondItem="VCi-AP-T2k" secondAttribute="bottom" constant="179" id="1LO-id-bTJ"/>
+                            <constraint firstItem="VCi-AP-T2k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="1mJ-j4-24s"/>
+                            <constraint firstItem="VCi-AP-T2k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="2uI-Hr-Vl2"/>
+                            <constraint firstItem="v8g-De-Ag2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="5vE-tQ-vYs"/>
+                            <constraint firstItem="VCi-AP-T2k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="6Ie-Fg-vTW"/>
+                            <constraint firstItem="lr1-6q-Nzg" firstAttribute="top" secondItem="hLt-9l-1Ti" secondAttribute="bottom" constant="407" id="8F8-TT-Rf0"/>
+                            <constraint firstItem="v8g-De-Ag2" firstAttribute="top" secondItem="VCi-AP-T2k" secondAttribute="bottom" constant="40" id="8JO-8N-n0x"/>
+                            <constraint firstItem="hLt-9l-1Ti" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="ApG-zR-NhI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hLt-9l-1Ti" secondAttribute="trailing" constant="89" id="R1D-te-qAe"/>
+                            <constraint firstItem="VCi-AP-T2k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="W3G-iT-RyJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v8g-De-Ag2" secondAttribute="trailing" constant="40" id="Zcb-dw-v10"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lr1-6q-Nzg" secondAttribute="bottom" constant="40" id="aZc-IC-33I"/>
+                            <constraint firstItem="hLt-9l-1Ti" firstAttribute="top" secondItem="v8g-De-Ag2" secondAttribute="bottom" constant="92" id="dI8-RS-c8s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VCi-AP-T2k" secondAttribute="trailing" constant="31" id="g8L-9N-R3b"/>
+                            <constraint firstItem="lr1-6q-Nzg" firstAttribute="top" secondItem="v8g-De-Ag2" secondAttribute="bottom" constant="160" id="uXO-RG-o0d"/>
+                            <constraint firstItem="v8g-De-Ag2" firstAttribute="top" secondItem="VCi-AP-T2k" secondAttribute="bottom" constant="179" id="vuh-4c-eh4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VCi-AP-T2k" secondAttribute="trailing" constant="40" id="w6n-qU-CeJ"/>
+                            <constraint firstItem="v8g-De-Ag2" firstAttribute="top" secondItem="VCi-AP-T2k" secondAttribute="bottom" constant="60" id="y9a-Ez-bqO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lbl" destination="hLt-9l-1Ti" id="Knc-Er-HEn"/>
+                        <outlet property="valueA" destination="VCi-AP-T2k" id="dFW-ZO-33K"/>
+                        <outlet property="valueB" destination="v8g-De-Ag2" id="9kT-k0-PnF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
